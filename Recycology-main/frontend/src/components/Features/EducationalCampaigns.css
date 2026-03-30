@@ -1,0 +1,184 @@
+.campaigns-panel {
+  background: linear-gradient(160deg, rgba(233, 245, 232, 0.96), rgba(255, 255, 255, 0.96));
+  padding: 1.6rem;
+  border-radius: 28px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(31, 106, 73, 0.12);
+}
+
+.campaigns-header {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.campaigns-header-copy {
+  display: flex;
+  gap: 0.95rem;
+  align-items: flex-start;
+}
+
+.campaigns-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--primary-green), var(--teal));
+  flex-shrink: 0;
+}
+
+.campaigns-eyebrow {
+  color: var(--primary-green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-bottom: 0.45rem;
+}
+
+.campaigns-title {
+  color: var(--dark-green);
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.campaigns-description {
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.campaigns-city-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.campaigns-city-tab {
+  border: 1px solid rgba(31, 106, 73, 0.16);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--dark-green);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.campaigns-city-tab.active {
+  background: linear-gradient(135deg, var(--primary-green), var(--teal));
+  color: var(--white);
+  border-color: transparent;
+}
+
+.campaigns-state {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--text-dark);
+  border: 1px solid rgba(31, 106, 73, 0.1);
+  margin-bottom: 1rem;
+}
+
+.campaigns-state--info {
+  color: #9a6420;
+  border-color: rgba(235, 166, 68, 0.16);
+  background: rgba(255, 247, 232, 0.94);
+}
+
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.campaign-card {
+  padding: 1rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(31, 106, 73, 0.1);
+  display: grid;
+  gap: 0.85rem;
+}
+
+.campaign-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.campaign-card h4 {
+  color: var(--dark-green);
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin-top: 0.5rem;
+}
+
+.campaign-type-badge,
+.campaign-city-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  padding: 0.38rem 0.72rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.campaign-type-badge {
+  background: rgba(31, 106, 73, 0.08);
+  color: var(--primary-green);
+}
+
+.campaign-city-badge {
+  background: rgba(235, 166, 68, 0.14);
+  color: #9a6420;
+  white-space: nowrap;
+}
+
+.campaign-address,
+.campaign-focus {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.campaign-focus {
+  color: var(--text-dark);
+}
+
+.campaign-contact {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--dark-green);
+  font-weight: 700;
+}
+
+.campaign-link {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.78rem 1rem;
+  font-weight: 800;
+  display: inline-flex;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--dark-green);
+  border: 1px solid rgba(31, 106, 73, 0.16);
+}
+
+.campaign-link:hover {
+  color: var(--white);
+  background: linear-gradient(135deg, var(--primary-green), var(--teal));
+  border-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .campaign-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
